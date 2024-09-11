@@ -48,15 +48,21 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         color: aliceblue;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 6px );
+        -webkit-backdrop-filter: blur( 6px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 
 
     .profile-img {
         height: 8rem;
         width: 8rem;
-        border-radius: 50%;
+        border-radius: 20%;
     }
 
 
@@ -102,8 +108,12 @@
     
     .section-title {
         /* height: 10%; */
-        color: rgb(75, 69, 69);
+        /* background: linear-gradient(to right,  #decba4,#3e5151); */
+        color: rgb(19, 32, 44);
         font-weight: bold;
+        
+        /* background: rgba( 255, 255, 255, 0.25 ); */
+
     }
 
 
@@ -326,7 +336,7 @@
 <body>
   <div class="section1">
     <div class="profile-img-section">
-        <img src="https://th.bing.com/th/id/OIP.7rsD5RX9MBDOObi-Pa7fWgHaHa?rs=1&pid=ImgDetMain" alt="men" class='profile-img' />
+        <img src="./assets/pass.jpeg" alt="men" class='profile-img' />
     </div>
       <div class="profile-data">
           <h1>Dinesh J</h1>
@@ -335,7 +345,7 @@
   </div>
   <div class="section2">
     <h1 class="section-title">Objective</h1>
-    <p>
+    <p class="content">
       Passionate about building high-quality web applications by utilizing my comprehensive full-stack development skills to contribute to innovative projects.
     </p>
   </div>
@@ -365,8 +375,8 @@
     </table>
   </div>
   <div class="section4">
-    <h1 class="section-title">Internship</h1>
-    <p>
+    <h1 class="section-title">Internships</h1>
+    <p class="content">
       <span class="companies">ACCOUNT MANAGER / VANARSDEL, LTD.</span>
 JUNE 20XX – PRESENT
 Managed and grew key accounts by developing strong relationships, identifying opportunities, and implementing effective sales strategies.
@@ -429,4 +439,22 @@ Drove revenue growth through exceptional customer service and strategic sales te
 </button>
 </div>
 </body>
+<script>
+  console.log('Hello');
+  let jobject={
+    name: "Dinesh",
+    phn: 936,
+    alive: false
+  }
+  let jsonobj={
+    'name': "Din",
+    'num': 634,
+    'alive': true
+  }
+  console.log(jobject);
+  let array=[[jobject,jsonobj,'hello',7],['secon','array']]
+  console.log(array);
+  let a1=[jobject,jsonobj,'hi',true]
+  console.log(a1)
+</script>
 </html>
